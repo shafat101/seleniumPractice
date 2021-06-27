@@ -2,6 +2,7 @@ package selenium;
 
 import java.util.List;
 import java.util.Random;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -43,5 +44,7 @@ public class formFill_Assignment {
 		ctt.sendKeys("Agra");
 		ctt.sendKeys(Keys.ENTER);
 		driver.findElement(By.id("submit")).click();
+		
+		driver.close();
 	}
 }

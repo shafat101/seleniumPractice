@@ -76,7 +76,7 @@ public class brokenLinksAssignment {
 	}
 	}
 
-	driver.quit();
+	driver.close();
 
 	
 }	

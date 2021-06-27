@@ -32,6 +32,8 @@ public class login_Assignment {
 		driver.findElement(By.id("systemUser_userName")).sendKeys("mike"+random_);
 		driver.findElement(By.id("systemUser_password")).sendKeys(random_+"pass123$"+rand_int1);
 		driver.findElement(By.id("systemUser_confirmPassword")).sendKeys(random_+"pass123$"+rand_int1);
+		
+		driver.close();
 	}
 
 }

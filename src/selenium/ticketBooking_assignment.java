@@ -18,7 +18,7 @@ public class ticketBooking_assignment {
 	driver.get("http://spicejet.com");
 	//Thread.sleep(5000L); 
 	//surely a bad practice implict/explicit/Fluent Wait are better choices 
-	driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);	
+	driver.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS);	
 	driver.findElement(By.xpath("//div[@class='row1 adult-infant-child']/div[1]")).click();
 	
 	Select a = new Select(driver.findElement(By.id("ctl00_mainContent_ddl_Adult")));
@@ -44,6 +44,7 @@ public class ticketBooking_assignment {
 	}
    
 	driver.findElement(By.id("ctl00_mainContent_btn_FindFlights")).click();
+	driver.close();
 	
 	
 	
